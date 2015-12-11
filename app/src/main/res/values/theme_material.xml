@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base">
+        <!--使用 ToolBar 所以要把 ActionBar 關掉-->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light">
+        <!-- 使用ActionBar 所以要把 -->
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+        <item name="colorPrimary">@color/mycolor_green_cpd</item>
+        <item name="colorPrimaryDark">@color/mycolor_green_cpd</item>
+    </style>
+</resources>
