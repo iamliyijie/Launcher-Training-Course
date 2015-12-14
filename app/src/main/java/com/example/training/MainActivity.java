@@ -3,12 +3,8 @@ package com.example.training;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
-
-import com.example.PagerTitleStripDemo_Sample.TrainingWeek2_Sample;
 
 public class MainActivity extends Activity {
     public Button testBtn1, testBtn2, testBtn3, testBtn4;
@@ -36,7 +32,7 @@ public class MainActivity extends Activity {
             public void onClick(View view) {
 //                Toast.makeText(view.getContext(), "Btn Click", Toast.LENGTH_LONG).show();
                 Intent intent = new Intent();
-                intent.setClass(MainActivity.this, TrainingWeek2.class);
+                intent.setClass(MainActivity.this, TrainingWeek2_1.class);
                 startActivity(intent);
             }
         });
@@ -47,7 +43,7 @@ public class MainActivity extends Activity {
             public void onClick(View view) {
 //                Toast.makeText(view.getContext(), "Btn Click", Toast.LENGTH_LONG).show();
                 Intent intent = new Intent();
-                intent.setClass(MainActivity.this, TrainingWeek2_Sample.class);
+                intent.setClass(MainActivity.this, TrainingWeek2_2.class);
                 startActivity(intent);
             }
         });
@@ -57,9 +53,9 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
 //                Toast.makeText(view.getContext(), "Btn Click", Toast.LENGTH_LONG).show();
-                Intent intent = new Intent();
+//                Intent intent = new Intent();
 //                intent.setClass(MainActivity.this, test.class);
-                startActivity(intent);
+//                startActivity(intent);
             }
         });
     }

@@ -42,7 +42,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.PagerTitleStripDemo_Sample.TrainingWeek2_Sample"
+            android:name="com.example.training.TrainingWeek2_1"
             android:label="@string/app_name"
             android:theme="@style/MyMaterialTheme.Base" >
             <intent-filter>

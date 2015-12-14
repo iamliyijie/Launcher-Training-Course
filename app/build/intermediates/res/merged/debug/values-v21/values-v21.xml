@@ -5,10 +5,6 @@
     <dimen name="design_navigation_padding_top_default">24dp</dimen>
     <!-- From: file:/C:/Users/yijie_li/GitHub/Launcher-Training-Course/app/src/main/res/values-v21/styles.xml -->
     <eat-comment/>
-    <style name="ActionBarTheme" parent="Theme.AppCompat.NoActionBar">
-        <!-- toolbar（actionbar）颜色 -->
-        <!-- 状态栏颜色 -->
-    </style>
     <style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
         <!-- API 21 theme customizations can go here. -->
     </style>
