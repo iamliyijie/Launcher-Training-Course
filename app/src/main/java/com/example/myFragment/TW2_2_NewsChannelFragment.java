@@ -37,7 +37,7 @@ public class TW2_2_NewsChannelFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         if (view == null) {
-            view = inflater.inflate(R.layout.tw_2_2_channel_fragment, null);
+            view = inflater.inflate(R.layout.tw2_2_channel_fragment, null);
             ((TextView) view.findViewById(R.id.tvTitle)).setText(title);
 
         }

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <include layout="@layout/custom_drawerlayout" />
+    <include layout="@layout/tw2_1_custom_drawerlayout" />
 
     <android.support.design.widget.TabLayout
         android:id="@+id/tab_layout"
@@ -23,7 +23,7 @@
 
     <include
         android:id="@+id/toolbar"
-        layout="@layout/toolbar"
+        layout="@layout/tw2_1_toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true" />

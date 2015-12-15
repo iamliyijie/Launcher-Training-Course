@@ -32,7 +32,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.training.TrainingWeek2"
+            android:name="com.example.training.TrainingWeek2_1"
             android:label="@string/app_name"
             android:theme="@style/MyMaterialTheme" >
             <intent-filter>
@@ -42,9 +42,28 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.training.TrainingWeek2_1"
+            android:name="com.example.training.TrainingWeek2_2"
             android:label="@string/app_name"
             android:theme="@style/MyMaterialTheme.Base" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.TEST.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.training.TrainingWeek3_1"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

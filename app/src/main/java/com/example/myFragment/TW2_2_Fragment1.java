@@ -18,7 +18,7 @@ public class TW2_2_Fragment1 extends Fragment {
     private ViewPager mViewPager;
     private List<String> tabs;
     private List<Fragment> fragmentList;
-    private TW2_2_NewsFragmentPagerAdapter adapter;
+    private TW2_2_PagerAdapter adapter;
 
     private View view;
 
@@ -26,7 +26,7 @@ public class TW2_2_Fragment1 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         if (view == null) {
-            view = inflater.inflate(R.layout.tw_2_2_news_fragment, null);
+            view = inflater.inflate(R.layout.tw2_2_news_fragment, null);
             mViewPager = (ViewPager) view.findViewById(R.id.pager);
             initViewPager();
         }
@@ -38,7 +38,7 @@ public class TW2_2_Fragment1 extends Fragment {
     private void initViewPager() {
         setTabs();
         setFragments();
-        adapter = new TW2_2_NewsFragmentPagerAdapter(super.getActivity().getSupportFragmentManager(),
+        adapter = new TW2_2_PagerAdapter(super.getActivity().getSupportFragmentManager(),
                 fragmentList, tabs);
         mViewPager.setAdapter(adapter);
     }

@@ -35,7 +35,7 @@ public class TrainingWeek2_2 extends AppCompatActivity implements
     private ListView navList;
     private FragmentManager fm;
     private List<Fragment> fragments;
-    private DrawerLayout mDrawerLayout;
+//    private DrawerLayout mDrawerLayout;
     private ArrayAdapter<String> adapter;
     private ActionBar actionBar;
     private String[] tabs = new String[]{" Fragment1 ", " Fragment2 ", " Fragment3 ", " Fragment4 ", " Fragment5 "};
@@ -43,12 +43,12 @@ public class TrainingWeek2_2 extends AppCompatActivity implements
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.tw_2_2_activity_main);
+        setContentView(R.layout.tw2_2_activity_main);
 
         drawerLayout = (DrawerLayout) super.findViewById(R.id.drawer_layout);
         navList = (ListView) super.findViewById(R.id.left_drawer);
         navList.setOnItemClickListener(this);
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+//        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
 
         fragments = new ArrayList<Fragment>();
         fm = super.getSupportFragmentManager();

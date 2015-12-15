@@ -26,7 +26,7 @@
         android:layout_alignLeft="@+id/button1"
         android:layout_below="@+id/button1"
         android:layout_marginTop="18dp"
-        android:text="Training Week 2 Using ToolBar" />
+        android:text="Training Week 2_1 Using ToolBar" />
 
     <Button
         android:id="@+id/button3"
@@ -35,7 +35,7 @@
         android:layout_alignLeft="@+id/button2"
         android:layout_below="@+id/button2"
         android:layout_marginTop="18dp"
-        android:text="Training Week 2-1 Using ActionBar" />
+        android:text="Training Week 2_2 Using ActionBar" />
 
     <Button
         android:id="@+id/button4"
@@ -44,7 +44,31 @@
         android:layout_alignLeft="@+id/button3"
         android:layout_below="@+id/button3"
         android:layout_marginTop="18dp"
-        android:text="Training Week 3" />
+        android:text="Training Week 3_1" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TEST"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/button4"/>
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TEST"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TEST"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"/>
 
     <Button
         android:id="@+id/button5"
@@ -53,15 +77,24 @@
         android:layout_alignLeft="@+id/button4"
         android:layout_below="@+id/button4"
         android:layout_marginTop="18dp"
-        android:text="Training Week 4" />
+        android:text="Training Week" />
 
     <Button
         android:id="@+id/button6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button4"
-        android:layout_below="@+id/button4"
+        android:layout_alignLeft="@+id/button5"
+        android:layout_below="@+id/button5"
         android:layout_marginTop="18dp"
-        android:text="Training Week 5" />
+        android:text="Training Week" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button6"
+        android:layout_below="@+id/button6"
+        android:layout_marginTop="18dp"
+        android:text="Training Week" />
 
 </RelativeLayout><!-- From: file:/C:/Users/yijie_li/GitHub/Launcher-Training-Course/app/src/main/res/layout/activity_main.xml -->
