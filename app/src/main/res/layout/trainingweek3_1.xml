@@ -2,33 +2,89 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
-              android:orientation="horizontal" >
-    <ScrollView
-        android:id="@+id/sv"
-        android:layout_width="wrap_content"
-        android:layout_height="fill_parent"
-        android:layout_weight="1">
-    <TextView
-        android:id="@+id/tv"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#82E26F"
+            android:gravity="center"
+            android:text="Main Activity"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#6F9FE2"
+            android:gravity="center"
+            android:text="Fragment"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:background="#FFFF00"
-        android:text="Main Activity"
-        android:textColor="#000000"
-        android:textSize="20px"/>
-    </ScrollView>
-    <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="fill_parent"
-        android:layout_weight="1">
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#82E26F"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:textSize="20px"/>
 
         <fragment
             android:id="@+id/first"
-            android:name="com.example.myFragment.TW3_1_Fragment"
+            class="com.example.myFragment.TW3_1_Fragment"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:background="#FF0000"
-             />
+            android:layout_weight="1"
+            android:background="#6F9FE2"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#000"
+        android:gravity="center"
+        android:text="LogCat"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#fff"/>
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="#000">
+
+        <TextView
+            android:id="@+id/log"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#000"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#fff"
+            />
     </ScrollView>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="clear"
+        android:id="@+id/button"/>
 
 </LinearLayout>

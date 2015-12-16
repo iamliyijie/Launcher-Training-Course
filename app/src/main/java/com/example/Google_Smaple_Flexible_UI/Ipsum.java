@@ -18,8 +18,8 @@ package com.example.Google_Smaple_Flexible_UI;
 public class Ipsum {
 
     static String[] Headlines = {
-        "Article One",
-        "Article Two"
+        "Article One1",
+        "Article Two2"
     };
 
     static String[] Articles = {

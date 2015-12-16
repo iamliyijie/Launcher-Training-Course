@@ -18,11 +18,13 @@ package com.example.Google_Smaple_Flexible_UI;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
+import android.util.Log;
+
 import com.example.training.R;
 
 public class MainActivity extends FragmentActivity 
         implements HeadlinesFragment.OnHeadlineSelectedListener {
-
+    static String Tag = "MainActivity";
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -32,11 +34,12 @@ public class MainActivity extends FragmentActivity
         // Check whether the activity is using the layout version with
         // the fragment_container FrameLayout. If so, we must add the first fragment
         if (findViewById(R.id.fragment_container) != null) {
-
+            Log.i(Tag, "onCreate: "+"findViewById(R.id.fragment_container) != null");
             // However, if we're being restored from a previous state,
             // then we don't need to do anything and should return or else
             // we could end up with overlapping fragments.
             if (savedInstanceState != null) {
+                Log.i(Tag, "onCreate: "+"savedInstanceState != null");
                 return;
             }
 
@@ -54,19 +57,23 @@ public class MainActivity extends FragmentActivity
     }
 
     public void onArticleSelected(int position) {
+        Log.i(Tag, "onArticleSelected: "+"position:"+position);
         // The user selected the headline of an article from the HeadlinesFragment
 
         // Capture the article fragment from the activity layout
         ArticleFragment articleFrag = (ArticleFragment)
-                getSupportFragmentManager().findFragmentById(R.id.article_fragment);
-
+                getSupportFragmentManager().findFragmentById(R.id.headlines_fragment);
+        Log.i(Tag, "onArticleSelected: "+"articleFrag:"+articleFrag);
+        Log.i(Tag, "onArticleSelected: "+"articleFrag:"+articleFrag);
         if (articleFrag != null) {
+            Log.i(Tag, "onArticleSelected: "+"articleFrag != null111111111111111111111111111");
             // If article frag is available, we're in two-pane layout...
 
             // Call a method in the ArticleFragment to update its content
             articleFrag.updateArticleView(position);
 
         } else {
+            Log.i(Tag, "onArticleSelected: "+"articleFrag != null else22222222222222222222222222222");
             // If the frag is not available, we're in the one-pane layout and must swap frags...
 
             // Create fragment and give it an argument for the selected article

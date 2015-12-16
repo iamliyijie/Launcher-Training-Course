@@ -59,6 +59,7 @@ public class TW3_1_Fragment extends Fragment {
     public void onResume() {
         super.onResume();
         Log.i(Tag, "onResume()");
+        Log.i(Tag, "============");
     }
 
     @Override
