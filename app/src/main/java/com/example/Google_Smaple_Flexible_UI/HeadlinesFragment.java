@@ -80,7 +80,7 @@ public class HeadlinesFragment extends ListFragment {
         Log.i(Tag, "onListItemClick");
         // Notify the parent activity of selected item
         mCallback.onArticleSelected(position);
-        
+
         // Set the item as checked to be highlighted when in two-pane layout
         getListView().setItemChecked(position, true);
     }

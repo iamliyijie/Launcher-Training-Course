@@ -2,18 +2,18 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\jars\classes.jar"
-        jumboMode="false"
-        revision="21.0.0"
-        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
-        <dex dex="C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\build\intermediates\pre-dexed\debug\classes-70287b8e7e3e0107df21feaa21b2453b470b5dcb.jar" />
-    </item>
-    <item
         jar="C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
         jumboMode="false"
         revision="21.0.0"
         sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
         <dex dex="C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\build\intermediates\pre-dexed\debug\classes-a07b3b2b17b441a656ad80b9845c7afff53cafb6.jar" />
+    </item>
+    <item
+        jar="C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
+        jumboMode="false"
+        revision="21.0.0"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.1-7a945a4a4e083a3fe2855805e00c16744f4473f2.jar" />
     </item>
     <item
         jar="C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\build\intermediates\exploded-aar\com.android.support\design\23.1.1\jars\classes.jar"
@@ -30,18 +30,18 @@
         <dex dex="C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.1-6f77a1657f13cd8c24a4f6e8df16e1692b0a4502.jar" />
     </item>
     <item
+        jar="C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="21.0.0"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\build\intermediates\pre-dexed\debug\classes-70287b8e7e3e0107df21feaa21b2453b470b5dcb.jar" />
+    </item>
+    <item
         jar="C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.1\jars\classes.jar"
         jumboMode="false"
         revision="21.0.0"
         sha1="09c5e804bc67fc0580360043dff067df574a60d4">
         <dex dex="C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\build\intermediates\pre-dexed\debug\classes-0211656839574ded6b71b8d28c7013b2ad46ec59.jar" />
-    </item>
-    <item
-        jar="C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
-        jumboMode="false"
-        revision="21.0.0"
-        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
-        <dex dex="C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.1-7a945a4a4e083a3fe2855805e00c16744f4473f2.jar" />
     </item>
 
 </items>

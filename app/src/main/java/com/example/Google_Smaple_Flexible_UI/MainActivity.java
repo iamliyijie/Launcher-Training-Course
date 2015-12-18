@@ -15,6 +15,7 @@
  */
 package com.example.Google_Smaple_Flexible_UI;
 
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
@@ -22,7 +23,7 @@ import android.util.Log;
 
 import com.example.training.R;
 
-public class MainActivity extends FragmentActivity 
+public class MainActivity extends FragmentActivity
         implements HeadlinesFragment.OnHeadlineSelectedListener {
     static String Tag = "MainActivity";
     /** Called when the activity is first created. */
@@ -36,7 +37,7 @@ public class MainActivity extends FragmentActivity
         if (findViewById(R.id.fragment_container) != null) {
             Log.i(Tag, "onCreate: "+"findViewById(R.id.fragment_container) != null");
             // However, if we're being restored from a previous state,
-            // then we don't need to do anything and should return or else
+            // then we don't need to do anything and should return zor else
             // we could end up with overlapping fragments.
             if (savedInstanceState != null) {
                 Log.i(Tag, "onCreate: "+"savedInstanceState != null");
@@ -56,14 +57,33 @@ public class MainActivity extends FragmentActivity
         }
     }
 
+//    //設定螢幕旋轉不執行任何動作
+//    @Override
+//    public void onConfigurationChanged(Configuration newConfig) {
+//        Log.i(Tag, "onConfigurationChanged()");
+//        // TODO Auto-generated method stub
+//        super.onConfigurationChanged(newConfig);
+//        if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
+//            // 什麼都不用寫
+//            Log.i(Tag, "onConfigurationChanged()1");
+//            setContentView(R.layout.news_articles_1);
+//        }
+//        else {
+//            // 什麼都不用寫
+//            Log.i(Tag, "onConfigurationChanged()2");
+//            setContentView(R.layout.news_articles);
+//        }
+//    }
+
     public void onArticleSelected(int position) {
         Log.i(Tag, "onArticleSelected: "+"position:"+position);
         // The user selected the headline of an article from the HeadlinesFragment
 
         // Capture the article fragment from the activity layout
+
         ArticleFragment articleFrag = (ArticleFragment)
                 getSupportFragmentManager().findFragmentById(R.id.headlines_fragment);
-        Log.i(Tag, "onArticleSelected: "+"articleFrag:"+articleFrag);
+
         Log.i(Tag, "onArticleSelected: "+"articleFrag:"+articleFrag);
         if (articleFrag != null) {
             Log.i(Tag, "onArticleSelected: "+"articleFrag != null111111111111111111111111111");
@@ -91,5 +111,13 @@ public class MainActivity extends FragmentActivity
             // Commit the transaction
             transaction.commit();
         }
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        // TODO Auto-generated method stub
+        super.onSaveInstanceState(outState);
+        //保存选择RadioButton的Id
+//        outState.putInt(LAST_CHOICE, mRadioGroup.getCheckedRadioButtonId());
     }
 }

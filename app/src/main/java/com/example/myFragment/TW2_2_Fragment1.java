@@ -59,6 +59,5 @@ public class TW2_2_Fragment1 extends Fragment {
         tabs.add("Tab 1");
         tabs.add("Tab 2");
         tabs.add("Tab 3");
-        tabs.add("Tab 4");
     }
 }

@@ -30,7 +30,7 @@ public class ArticleFragment extends Fragment {
     int mCurrentPosition = -1;
     static String Tag = "ArticleFragment";
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, 
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
         Bundle savedInstanceState) {
         Log.i(Tag, "onCreateView");
         // If activity recreated (such as from screen rotate), restore

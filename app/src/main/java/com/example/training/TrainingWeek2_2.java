@@ -23,8 +23,6 @@ import android.widget.ListView;
 import com.example.myFragment.TW2_2_Fragment1;
 import com.example.myFragment.TW2_2_Fragment2;
 import com.example.myFragment.TW2_2_Fragment3;
-import com.example.myFragment.TW2_2_Fragment4;
-import com.example.myFragment.TW2_2_Fragment5;
 
 public class TrainingWeek2_2 extends AppCompatActivity implements
         OnItemClickListener {
@@ -38,7 +36,7 @@ public class TrainingWeek2_2 extends AppCompatActivity implements
 //    private DrawerLayout mDrawerLayout;
     private ArrayAdapter<String> adapter;
     private ActionBar actionBar;
-    private String[] tabs = new String[]{" Fragment1 ", " Fragment2 ", " Fragment3 ", " Fragment4 ", " Fragment5 "};
+    private String[] tabs = new String[]{" Fragment1 ", " Fragment2 ", " Fragment3 "};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,10 +68,6 @@ public class TrainingWeek2_2 extends AppCompatActivity implements
         fragments.add(fragment2);
         TW2_2_Fragment3 fragment3 = new TW2_2_Fragment3();
         fragments.add(fragment3);
-        TW2_2_Fragment4 fragment4 = new TW2_2_Fragment4();
-        fragments.add(fragment4);
-        TW2_2_Fragment5 fragment5 = new TW2_2_Fragment5();
-        fragments.add(fragment5);
         setFragments(0);
     }
 

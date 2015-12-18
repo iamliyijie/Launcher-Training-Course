@@ -64,9 +64,9 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
 //                Toast.makeText(view.getContext(), "Btn Click", Toast.LENGTH_LONG).show();
-//                Intent intent = new Intent();
-//                intent.setClass(MainActivity.this, TrainingWeek3_1.class);
-//                startActivity(intent);
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this, TrainingWeek3_2.class);
+                startActivity(intent);
             }
         });
 
@@ -120,7 +120,7 @@ public class MainActivity extends Activity {
             public void onClick(View view) {
 //                Toast.makeText(view.getContext(), "Btn Click", Toast.LENGTH_LONG).show();
                 Intent intent = new Intent();
-                intent.setClass(MainActivity.this, com.example.Google_Smaple_Flexible_UI.MainActivity.class);
+                intent.setClass(MainActivity.this, TrainingWeek3_2.class);
                 startActivity(intent);
             }
         });
