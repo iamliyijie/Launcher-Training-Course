@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:2:1-95:12
+ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:2:1-107:12
 	package
 		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:3:5-35
 		INJECTED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml
@@ -33,7 +33,7 @@ MERGED from [com.android.support:support-v4:23.1.1] C:\Users\yijie_li\GitHub\Lau
 		INJECTED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml
 application
-ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:11:5-94:19
+ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:11:5-106:19
 MERGED from [com.android.support:support-v4:23.1.1] C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:appcompat-v7:23.1.1] C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.1.1] C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
@@ -108,3 +108,11 @@ ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\Androi
 		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:87:13-45
 	android:name
 		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:85:13-44
+activity#com.example.training.TrainingWeek4
+ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:95:9-104:20
+	android:label
+		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:98:13-45
+	android:theme
+		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:97:13-51
+	android:name
+		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:96:13-42
