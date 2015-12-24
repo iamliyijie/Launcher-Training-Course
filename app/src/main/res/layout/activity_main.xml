@@ -95,6 +95,6 @@
         android:layout_alignLeft="@+id/button6"
         android:layout_below="@+id/button6"
         android:layout_marginTop="18dp"
-        android:text="Training Week" />
+        android:text="Training Week5" />
 
 </RelativeLayout>

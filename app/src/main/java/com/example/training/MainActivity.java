@@ -86,9 +86,9 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
 //                Toast.makeText(view.getContext(), "Btn Click", Toast.LENGTH_LONG).show();
-//                Intent intent = new Intent();
-//                intent.setClass(MainActivity.this, TrainingWeek3_1.class);
-//                startActivity(intent);
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this, TrainingWeek5_1.class);
+                startActivity(intent);
             }
         });
 
