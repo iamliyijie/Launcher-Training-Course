@@ -19,8 +19,8 @@ import android.widget.Toast;
  */
 public class TrainingWeek5_1 extends Activity {
 
-    TextView Tv_name,Tv_tel,Tv_mail;
-    EditText Edtxt_name,Edtxt_tel,Edtxt_mail;
+    TextView Tv_name, Tv_tel, Tv_mail;
+    EditText Edtxt_name, Edtxt_tel, Edtxt_mail;
     Button Btn_click;
 
     @Override
@@ -28,21 +28,21 @@ public class TrainingWeek5_1 extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.trainingweek5_1);
 
-        Tv_name = (TextView)findViewById(R.id.tv_tw51_name);
-        Tv_tel = (TextView)findViewById(R.id.tv_tw51_tel);
-        Tv_mail = (TextView)findViewById(R.id.tv_tw51_mail);
+        Tv_name = (TextView) findViewById(R.id.tv_tw51_name);
+        Tv_tel = (TextView) findViewById(R.id.tv_tw51_tel);
+        Tv_mail = (TextView) findViewById(R.id.tv_tw51_mail);
 
-        Edtxt_name = (EditText)findViewById(R.id.edtTxt_tw51_name);
-        Edtxt_tel = (EditText)findViewById(R.id.edtTxt_tw51_tel);
-        Edtxt_mail = (EditText)findViewById(R.id.edtTxt_tw51_mail);
-        Btn_click = (Button)findViewById(R.id.btn_tw51);
+        Edtxt_name = (EditText) findViewById(R.id.edTxt_tw51_name);
+        Edtxt_tel = (EditText) findViewById(R.id.edTxt_tw51_tel);
+        Edtxt_mail = (EditText) findViewById(R.id.edTxt_tw51_mail);
+        Btn_click = (Button) findViewById(R.id.btn_tw51);
 
         Btn_click.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View view) {
                 PersonParcelable p = new PersonParcelable();
                 if ("".equals(Edtxt_name.getText().toString().trim()) || "".equals(Edtxt_tel.getText().toString().trim()) || "".equals(Edtxt_mail.getText().toString().trim())) {
-                    myToast("請輸入Name、Tel、mail");
+                    myToast("請輸入Name、Tel、Mail");
                 } else {
 
                     p.setName(Edtxt_name.getText().toString());
@@ -58,11 +58,13 @@ public class TrainingWeek5_1 extends Activity {
         });
     }
 
+    //    接收回傳參數
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-
         super.onActivityResult(requestCode, resultCode, data);
-        if(requestCode == 1  && resultCode == 1){
+//        如於TrainingWeek5_2按下返回一樣會觸發onActivityResult
+//        此時resultCode會回傳 0 ，如按下送出按鈕會回傳 1
+        if (requestCode == 1 && resultCode == 1) {
             PersonParcelable p = data.getExtras().getParcelable("PersonParcelable");
             Tv_tel.setText(p.getTel().toString());
             Tv_name.setText(p.getName().toString());

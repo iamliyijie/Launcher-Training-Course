@@ -29,7 +29,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:id="@+id/edtTxt_tw51_name"/>
+            android:id="@+id/edTxt_tw51_name"/>
     </LinearLayout>
 
     <LinearLayout
@@ -49,7 +49,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:id="@+id/edtTxt_tw51_tel"
+            android:id="@+id/edTxt_tw51_tel"
             android:inputType="number"
             android:layout_gravity="center_horizontal"/>
     </LinearLayout>
@@ -71,7 +71,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:id="@+id/edtTxt_tw51_mail"
+            android:id="@+id/edTxt_tw51_mail"
             android:layout_gravity="center_horizontal"/>
     </LinearLayout>
 
