@@ -29,11 +29,9 @@ public class TrainingWeek2_2 extends AppCompatActivity implements
 
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle toggle;
-    private android.support.v7.app.ActionBarDrawerToggle mDrawerToggle;
     private ListView navList;
     private FragmentManager fm;
     private List<Fragment> fragments;
-//    private DrawerLayout mDrawerLayout;
     private ArrayAdapter<String> adapter;
     private ActionBar actionBar;
     private String[] tabs = new String[]{" Fragment1 ", " Fragment2 ", " Fragment3 "};
@@ -46,7 +44,6 @@ public class TrainingWeek2_2 extends AppCompatActivity implements
         drawerLayout = (DrawerLayout) super.findViewById(R.id.drawer_layout);
         navList = (ListView) super.findViewById(R.id.left_drawer);
         navList.setOnItemClickListener(this);
-//        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
 
         fragments = new ArrayList<Fragment>();
         fm = super.getSupportFragmentManager();
@@ -79,22 +76,12 @@ public class TrainingWeek2_2 extends AppCompatActivity implements
     private void initActionBar() {
         actionBar = super.getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
-
-        //設定ActionBar背景顏色、title顏色(無法使用)
-//        actionBar.setBackgroundDrawable(getResources().getDrawable(R.color.default_white));
-//        int titleId = Resources.getSystem().getIdentifier("action_bar_title", "id", "android");
-//        TextView titleView = (TextView)findViewById(titleId);
-//        System.out.println("titleId:" + titleId);
-//        titleView.setTextColor(getResources().getColor(R.color.default_white));
-
         actionBar.setIcon(new ColorDrawable(0));
         actionBar.setTitle(tabs[0]);
     }
 
     private void initDrawerLayout() {
-        toggle = new ActionBarDrawerToggle(this, drawerLayout,
-                R.drawable.ic_launcher, R.string.drawer_open,
-                R.string.drawer_closed) {
+        toggle = new ActionBarDrawerToggle(this, drawerLayout, R.drawable.ic_launcher, R.string.drawer_open, R.string.drawer_closed) {
             @Override
             public void onDrawerClosed(View drawerView) {
                 // TODO Auto-generated method stub

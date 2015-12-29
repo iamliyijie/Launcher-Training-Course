@@ -28,8 +28,7 @@
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.default" />
             </intent-filter>
         </activity>
 
@@ -39,8 +38,7 @@
             android:theme="@style/MyMaterialTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.default" />
             </intent-filter>
         </activity>
 
@@ -50,8 +48,7 @@
             android:theme="@style/MyMaterialTheme.Base">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.default" />
             </intent-filter>
         </activity>
         <!--不免螢幕翻轉重新執行onCreate
@@ -66,18 +63,7 @@
             >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
-        <activity
-            android:name="com.example.Google_Smaple_Flexible_UI.MainActivity"
-            android:label="XD">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.default" />
             </intent-filter>
         </activity>
 
@@ -87,8 +73,7 @@
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.default" />
             </intent-filter>
         </activity>
 
@@ -98,8 +83,7 @@
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.default" />
             </intent-filter>
         </activity>
 
@@ -109,8 +93,7 @@
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.default" />
             </intent-filter>
         </activity>
 
@@ -120,10 +103,8 @@
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.default" />
             </intent-filter>
         </activity>
-
     </application>
 </manifest>

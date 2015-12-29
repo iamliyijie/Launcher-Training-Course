@@ -24,26 +24,26 @@ public class TrainingWeek3_1 extends Activity {
      * Called when the activity is first created.
      */
     static String Tag = "T_Activity";
-    String line = "";
-    Button testBtn;
-    ScrollView  logContainer;
-    TextView textViewLog;
+    String Str_line = "";
+    Button Btn_clear;
+    ScrollView Sv_log;
+    TextView Tv_log;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.i(Tag, "onCreate()");
         setContentView(R.layout.trainingweek3_1);
-        logContainer = (ScrollView) findViewById(R.id.sv);
-        textViewLog = (TextView) findViewById(R.id.log);
+        Sv_log = (ScrollView) findViewById(R.id.sv_tw31_log);
+        Tv_log = (TextView) findViewById(R.id.tv_tw31_log);
 
         thread();
 
-        testBtn = (Button) findViewById(R.id.button);
-        testBtn.setOnClickListener(new Button.OnClickListener() {
+        Btn_clear = (Button) findViewById(R.id.but_tw31_clear);
+        Btn_clear.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Toast.makeText(view.getContext(), "Btn Click", Toast.LENGTH_LONG).show();
-                textViewLog.setText("");
+                Tv_log.setText("");
             }
         });
 
@@ -71,9 +71,9 @@ public class TrainingWeek3_1 extends Activity {
                     Process process = Runtime.getRuntime().exec("logcat");
                     BufferedReader bufferedReader = new BufferedReader(
                             new InputStreamReader(process.getInputStream()));
-                    while ((line = bufferedReader.readLine()) != null) {
-                        if (line.contains("I/T_")) {
-                            publishProgress(line);
+                    while ((Str_line = bufferedReader.readLine()) != null) {
+                        if (Str_line.contains("I/T_")) {
+                            publishProgress(Str_line);
                         }
                     }
                 } catch (IOException e) {
@@ -83,11 +83,11 @@ public class TrainingWeek3_1 extends Activity {
 
             @Override
             protected void onProgressUpdate(String... values) {
-                textViewLog.append(values[0] + "\n");
-                logContainer.post(new Runnable() {
+                Tv_log.append(values[0] + "\n");
+                Sv_log.post(new Runnable() {
                     @Override
                     public void run() {
-                        logContainer.fullScroll(View.FOCUS_DOWN);
+                        Sv_log.fullScroll(View.FOCUS_DOWN);
                     }
                 });
             }

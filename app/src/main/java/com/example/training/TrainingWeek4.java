@@ -28,10 +28,10 @@ import com.example.DB.DBHelper;
 
 public class TrainingWeek4 extends Activity implements OnClickListener {
 
-    private DBHelper dbhelper;
-    private TextView result;
-    private EditText editName,editTel,editEmail,editId;
-    private Button btnAdd,btnDel,btnUpdate;
+    private DBHelper DBhelper;
+    private TextView TvResult;
+    private EditText EdtxtName,EdtxtTel,EdtxtEmail,EdtxtId;
+    private Button BtnAdd,BtnDel,BtnUpdate;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -51,65 +51,66 @@ public class TrainingWeek4 extends Activity implements OnClickListener {
     }
 
     private void openDatabase() {
-        dbhelper = new DBHelper(this);
+        DBhelper = new DBHelper(this);
     }
 
     private void closeDatabase() {
-        dbhelper.close();
+        DBhelper.close();
     }
 
     private void initView() {
-        result = (TextView) findViewById(R.id.txtResult);
+        TvResult = (TextView) findViewById(R.id.tv_tw4_result);
 
-        editName = (EditText) findViewById(R.id.editName);
-        editTel = (EditText) findViewById(R.id.editTel);
-        editEmail = (EditText) findViewById(R.id.editEmail);
-        editId = (EditText) findViewById(R.id.editId);
+        EdtxtName = (EditText) findViewById(R.id.edTxt_tw4_name);
+        EdtxtTel = (EditText) findViewById(R.id.edTxt_tw4_tel);
+        EdtxtEmail = (EditText) findViewById(R.id.edTxt_tw4_mail);
+        EdtxtId = (EditText) findViewById(R.id.edTxt_tw4_id);
 
-        btnAdd = (Button) findViewById(R.id.btnAdd);
-        btnDel = (Button) findViewById(R.id.btnDel);
-        btnUpdate = (Button) findViewById(R.id.btnUpdate);
+        BtnAdd = (Button) findViewById(R.id.btn_tw4_add);
+        BtnDel = (Button) findViewById(R.id.btn_tw4_del);
+        BtnUpdate = (Button) findViewById(R.id.btn_tw4_update);
 
-        btnAdd.setOnClickListener(this);
-        btnDel.setOnClickListener(this);
-        btnUpdate.setOnClickListener(this);
+        BtnAdd.setOnClickListener(this);
+        BtnDel.setOnClickListener(this);
+        BtnUpdate.setOnClickListener(this);
+
+
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.btnAdd:
+            case R.id.btn_tw4_add:
                 add();
                 break;
 
-            case R.id.btnDel:
+            case R.id.btn_tw4_del:
                 del();
                 break;
 
-            case R.id.btnUpdate:
+            case R.id.btn_tw4_update:
                 update();
                 break;
 
             default:
                 break;
         }
-
         show();
     }
 
     private void add() {
-        SQLiteDatabase db = dbhelper.getWritableDatabase();
+        SQLiteDatabase db = DBhelper.getWritableDatabase();
         ContentValues values = new ContentValues();
-        values.put(NAME, editName.getText().toString());
-        values.put(TEL, editTel.getText().toString());
-        values.put(EMAIL, editEmail.getText().toString());
+        values.put(NAME, EdtxtName.getText().toString());
+        values.put(TEL, EdtxtTel.getText().toString());
+        values.put(EMAIL, EdtxtEmail.getText().toString());
         db.insert(TABLE_NAME, null, values);
 
         cleanEditText();
     }
 
     private Cursor getCursor() {
-        SQLiteDatabase db = dbhelper.getReadableDatabase();
+        SQLiteDatabase db = DBhelper.getReadableDatabase();
         String[] columns = {_ID, NAME, TEL, EMAIL};
 
         Cursor cursor = db.query(TABLE_NAME, columns, null, null, null, null, null);
@@ -136,15 +137,15 @@ public class TrainingWeek4 extends Activity implements OnClickListener {
             resultData.append(email).append(": ");
             resultData.append("\n");
         }
-        result.setText(resultData);
+        TvResult.setText(resultData);
     }
 
     private void del() {
-        if("".equals(editId.getText().toString().trim())){
+        if("".equals(EdtxtId.getText().toString().trim())){
             myToast("請輸入ID");
         }else{
-            String id = editId.getText().toString();
-            SQLiteDatabase db = dbhelper.getWritableDatabase();
+            String id = EdtxtId.getText().toString();
+            SQLiteDatabase db = DBhelper.getWritableDatabase();
             db.delete(TABLE_NAME, _ID + "=" + id, null);
             cleanEditText();
         }
@@ -152,17 +153,17 @@ public class TrainingWeek4 extends Activity implements OnClickListener {
 
     private void update() {
 
-        if("".equals(editId.getText().toString().trim())){
+        if("".equals(EdtxtId.getText().toString().trim())){
             myToast("請輸入ID");
         }else{
-            String id = editId.getText().toString();
+            String id = EdtxtId.getText().toString();
 
             ContentValues values = new ContentValues();
-            values.put(NAME, editName.getText().toString());
-            values.put(TEL, editTel.getText().toString());
-            values.put(EMAIL, editEmail.getText().toString());
+            values.put(NAME, EdtxtName.getText().toString());
+            values.put(TEL, EdtxtTel.getText().toString());
+            values.put(EMAIL, EdtxtEmail.getText().toString());
 
-            SQLiteDatabase db = dbhelper.getWritableDatabase();
+            SQLiteDatabase db = DBhelper.getWritableDatabase();
             db.update(TABLE_NAME, values, _ID + "=" + id, null);
 
             cleanEditText();
@@ -170,10 +171,10 @@ public class TrainingWeek4 extends Activity implements OnClickListener {
     }
 
     private void cleanEditText() {
-        editName.setText("");
-        editTel.setText("");
-        editEmail.setText("");
-        editId.setText("");
+        EdtxtName.setText("");
+        EdtxtTel.setText("");
+        EdtxtEmail.setText("");
+        EdtxtId.setText("");
     }
 
     public void myToast(String txt) {

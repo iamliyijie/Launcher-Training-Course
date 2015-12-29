@@ -6,85 +6,86 @@
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_weight="1"
+            android:layout_height="wrap_content"
             android:background="#82E26F"
             android:gravity="center"
             android:text="Main Activity"
             android:textAppearance="?android:attr/textAppearanceMedium"/>
 
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_weight="1"
-            android:background="#6F9FE2"
-            android:gravity="center"
-            android:text="Fragment"
-            android:textAppearance="?android:attr/textAppearanceMedium"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_weight="2"
-        android:orientation="horizontal">
-
-        <TextView
+        <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight="1"
             android:background="#82E26F"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="#000000"
-            android:textSize="20px"/>
+            android:padding="10px"
+            android:orientation="vertical">
 
-        <fragment
-            android:id="@+id/first"
-            class="com.example.myFragment.TW3_1_Fragment"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_weight="1"
-            android:background="#6F9FE2"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#6F9FE2"
+                android:gravity="center"
+                android:text="Fragment"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <fragment
+                android:id="@+id/myfragment"
+                class="com.example.myFragment.TW3_1_Fragment"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#6F9FE2"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+        </LinearLayout>
     </LinearLayout>
 
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:background="#000"
-        android:gravity="center"
-        android:text="LogCat"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="#fff"/>
-
-    <ScrollView
-        android:id="@+id/sv"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_weight="1"
-        android:background="#000">
+        android:padding="10px"
+        android:background="#82E26F">
 
         <TextView
-            android:id="@+id/log"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#000"
+            android:gravity="center"
+            android:text="LogCat"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#fff"/>
+
+        <ScrollView
+            android:id="@+id/sv_tw31_log"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:background="#000"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textColor="#fff"
-            />
-    </ScrollView>
+            android:layout_weight="1"
+            android:background="#000">
 
-    <Button
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="clear"
-        android:id="@+id/button"/>
+            <TextView
+                android:id="@+id/tv_tw31_log"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:saveEnabled="true"
+                android:freezesText="true"
+                android:background="#000"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#fff"
+                />
+        </ScrollView>
+
+        <Button
+            android:id="@+id/but_tw31_clear"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#000"
+            android:text="clear"/>
+    </LinearLayout>
 
 </LinearLayout><!-- From: file:/C:/Users/yijie_li/GitHub/Launcher-Training-Course/app/src/main/res/layout/trainingweek3_1.xml -->

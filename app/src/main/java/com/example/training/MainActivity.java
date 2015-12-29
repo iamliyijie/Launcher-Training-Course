@@ -91,38 +91,5 @@ public class MainActivity extends Activity {
                 startActivity(intent);
             }
         });
-
-        testBtn = (Button) findViewById(R.id.button10);
-        testBtn.setOnClickListener(new Button.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-//                Toast.makeText(view.getContext(), "Btn Click", Toast.LENGTH_LONG).show();
-                Intent intent = new Intent();
-                intent.setClass(MainActivity.this, com.example.Google_Smaple_Flexible_UI.MainActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        testBtn = (Button) findViewById(R.id.button11);
-        testBtn.setOnClickListener(new Button.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-//                Toast.makeText(view.getContext(), "Btn Click", Toast.LENGTH_LONG).show();
-                Intent intent = new Intent();
-                intent.setClass(MainActivity.this, TrainingWeek4.class);
-                startActivity(intent);
-            }
-        });
-
-        testBtn = (Button) findViewById(R.id.button12);
-        testBtn.setOnClickListener(new Button.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-//                Toast.makeText(view.getContext(), "Btn Click", Toast.LENGTH_LONG).show();
-                Intent intent = new Intent();
-                intent.setClass(MainActivity.this, TrainingWeek3_2.class);
-                startActivity(intent);
-            }
-        });
     }
 }

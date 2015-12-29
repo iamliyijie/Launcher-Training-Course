@@ -25,10 +25,9 @@ public class TrainingWeek2_1 extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mDrawerToggle;
     private ListView lvLeftMenu;
-    private String[] lvs = {"List Item 01", "List Item 02", "List Item 03", "List Item 04"};
     private ArrayAdapter arrayAdapter;
     private ImageView ivRunningMan;
-    private static final String ACTIVITY_TAG="TrainingWeek2_Log";
+    private static final String TAG="TrainingWeek2_Log";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,18 +67,18 @@ public class TrainingWeek2_1 extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         //設定ToolBar動態效果
-        mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, toolbar, R.string.hello_world, R.string.hello_world) {
+        mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, toolbar, R.string.app_name, R.string.app_name) {
             @Override
             public void onDrawerOpened(View drawerView) {
                 viewPager.setVisibility(View.GONE);
                 super.onDrawerOpened(drawerView);
-                Log.i(TrainingWeek2_1.ACTIVITY_TAG, "onDrawerOpened");
+                Log.i(TrainingWeek2_1.TAG, "onDrawerOpened");
             }
 
             @Override
             public void onDrawerClosed(View drawerView) {
                 super.onDrawerClosed(drawerView);
-                Log.i(TrainingWeek2_1.ACTIVITY_TAG, "onDrawerClosed");
+                Log.i(TrainingWeek2_1.TAG, "onDrawerClosed");
                 viewPager.setVisibility(View.VISIBLE);
             }
         };
@@ -106,7 +105,7 @@ public class TrainingWeek2_1 extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-        Log.i(TrainingWeek2_1.ACTIVITY_TAG, "onOptionsItemSelected");
+        Log.i(TrainingWeek2_1.TAG, "onOptionsItemSelected");
         if (id == R.id.action_settings) {
             return true;
         }

@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:2:1-129:12
+ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:2:1-110:12
 	package
 		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:3:5-35
 		INJECTED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml
@@ -33,7 +33,7 @@ MERGED from [com.android.support:support-v4:23.1.1] C:\Users\yijie_li\GitHub\Lau
 		INJECTED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml
 application
-ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:11:5-128:19
+ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:11:5-109:19
 MERGED from [com.android.support:support-v4:23.1.1] C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:appcompat-v7:23.1.1] C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.1.1] C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
@@ -67,68 +67,68 @@ ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\Androi
 	android:name
 		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:22:27-74
 activity#com.example.training.TrainingWeek1
-ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:26:9-34:20
+ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:26:9-33:20
 	android:label
 		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:28:13-45
 	android:name
 		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:27:13-42
+intent-filter#android.intent.action.MAIN+android.intent.category.default
+ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:29:13-32:29
+category#android.intent.category.default
+ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:31:17-76
+	android:name
+		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:31:27-73
 activity#com.example.training.TrainingWeek2_1
-ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:36:9-45:20
+ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:35:9-43:20
 	android:label
-		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:38:13-45
+		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:37:13-45
 	android:theme
-		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:39:13-51
+		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:38:13-51
 	android:name
-		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:37:13-44
+		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:36:13-44
 activity#com.example.training.TrainingWeek2_2
-ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:47:9-56:20
+ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:45:9-53:20
 	android:label
-		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:49:13-45
+		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:47:13-45
 	android:theme
-		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:50:13-56
+		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:48:13-56
 	android:name
-		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:48:13-44
+		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:46:13-44
 activity#com.example.training.TrainingWeek3_1
-ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:62:9-72:20
+ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:59:9-68:20
 	android:label
-		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:65:13-45
+		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:62:13-45
 	android:configChanges
-		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:64:13-74
+		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:61:13-74
 	android:name
-		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:63:13-44
-activity#com.example.Google_Smaple_Flexible_UI.MainActivity
-ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:74:9-82:20
-	android:label
-		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:76:13-31
-	android:name
-		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:75:13-78
+		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:60:13-44
 activity#com.example.training.TrainingWeek3_2
-ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:84:9-93:20
+ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:70:9-78:20
 	android:label
-		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:87:13-45
+		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:73:13-45
 	android:name
-		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:85:13-44
+		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:71:13-44
 activity#com.example.training.TrainingWeek4
-ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:95:9-104:20
+ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:80:9-88:20
 	android:label
-		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:98:13-45
+		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:83:13-45
 	android:theme
-		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:97:13-51
+		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:82:13-51
 	android:name
-		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:96:13-42
+		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:81:13-42
 activity#com.example.training.TrainingWeek5_1
-ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:106:9-115:20
+ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:90:9-98:20
 	android:label
-		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:109:13-45
+		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:93:13-45
 	android:theme
-		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:108:13-51
+		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:92:13-51
 	android:name
-		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:107:13-44
+		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:91:13-44
 activity#com.example.training.TrainingWeek5_2
-ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:117:9-126:20
+ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:100:9-108:20
 	android:label
-		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:120:13-45
+		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:103:13-45
 	android:theme
-		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:119:13-51
+		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:102:13-51
 	android:name
-		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:118:13-44
+		ADDED from C:\Users\yijie_li\GitHub\Launcher-Training-Course\app\src\main\AndroidManifest.xml:101:13-44

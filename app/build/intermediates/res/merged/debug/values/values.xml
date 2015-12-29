@@ -356,7 +356,6 @@
     <eat-comment/>
     <string name="drawer_closed">關閉</string>
     <string name="drawer_open">打開</string>
-    <string name="hello_world">Hello world!</string>
     <!-- From: file:/C:/Users/yijie_li/GitHub/Launcher-Training-Course/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <string name="status_bar_notification_info_overflow">999+</string>

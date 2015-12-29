@@ -6,7 +6,6 @@
               android:padding="5sp">
 
     <LinearLayout
-        android:id="@+id/linearLayout1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:gravity="right">
@@ -19,7 +18,7 @@
             android:textSize="20sp"/>
 
         <EditText
-            android:id="@+id/editName"
+            android:id="@+id/edTxt_tw4_name"
             android:layout_width="fill_parent"
             android:layout_height="40dp"
             android:layout_weight="1"
@@ -29,7 +28,6 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/LinearLayout01"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:gravity="right">
@@ -42,7 +40,7 @@
             android:textSize="20sp"/>
 
         <EditText
-            android:id="@+id/editTel"
+            android:id="@+id/edTxt_tw4_tel"
             android:layout_width="fill_parent"
             android:layout_height="40dp"
             android:layout_weight="1"
@@ -64,7 +62,7 @@
             android:textSize="20sp"/>
 
         <EditText
-            android:id="@+id/editEmail"
+            android:id="@+id/edTxt_tw4_mail"
             android:layout_width="fill_parent"
             android:layout_height="40dp"
             android:layout_weight="1"
@@ -86,7 +84,7 @@
             android:textSize="20sp"/>
 
         <EditText
-            android:id="@+id/editId"
+            android:id="@+id/edTxt_tw4_id"
             android:layout_width="fill_parent"
             android:layout_height="40dp"
             android:layout_weight="1"
@@ -96,27 +94,26 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal">
 
         <Button
-            android:id="@+id/btnAdd"
+            android:id="@+id/btn_tw4_add"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Add"/>
 
         <Button
-            android:id="@+id/btnUpdate"
+            android:id="@+id/btn_tw4_update"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Update"/>
 
         <Button
-            android:id="@+id/btnDel"
+            android:id="@+id/btn_tw4_del"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -125,17 +122,15 @@
     </LinearLayout>
 
     <ScrollView
-        android:id="@+id/scrollView1"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
 
         <LinearLayout
-            android:id="@+id/linearLayout3"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent">
 
             <TextView
-                android:id="@+id/txtResult"
+                android:id="@+id/tv_tw4_result"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:text="Result: "
